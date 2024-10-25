@@ -1,44 +1,32 @@
 <!DOCTYPE html>
-<html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>QLTC</title>
-<style>
-* {
-  margin: 0;
-  padding: 0;
-}
-#mindmap {
-  display: block;
-  width: 100vw;
-  height: 100vh;
-}
-</style>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.2/dist/style.css">
+<meta charset="utf-8"/>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<link rel="stylesheet" href="base.min.css"/>
+<link rel="stylesheet" href="fancy.min.css"/>
+<link rel="stylesheet" href="main.css"/>
+<script src="compatibility.min.js"></script>
+<script src="theViewer.min.js"></script>
+<script>
+try{
+theViewer.defaultViewer = new theViewer.Viewer({});
+}catch(e){}
+</script>
+<title></title>
 </head>
 <body>
-<svg id="mindmap"></svg>
-<script src="https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.17.2/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.2/dist/index.js"></script><script>(r => {
-                setTimeout(r);
-              })(() => {
-  const {
-    markmap,
-    mm
-  } = window;
-  const {
-    el
-  } = markmap.Toolbar.create(mm);
-  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
-  document.body.append(el);
-})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
-              const markmap = getMarkmap();
-              window.mm = markmap.Markmap.create(
-                "svg#mindmap",
-                (getOptions || markmap.deriveOptions)(jsonOptions),
-                root2
-              );
-            })(() => window.markmap,null,{"content":"QLTC","children":[{"content":"🖥️ SF/WAF","children":[{"content":"Software Firewall","children":[],"payload":{"lines":"2,3"}},{"content":"WAF (Web Application Firewall)","children":[],"payload":{"lines":"3,4"}}],"payload":{"lines":"1,2"}},{"content":"🖥️ IIS","children":[{"content":"<a href=\"https://qltc.dtsoft.vn\">1. https://qltc.dtsoft.vn</a>","children":[],"payload":{"lines":"5,6"}},{"content":"<a href=\"https://qltcapi.dtsoft.vn\">2. https://qltcapi.dtsoft.vn</a>","children":[],"payload":{"lines":"6,7"}},{"content":"<a href=\"https://qltcapicore.dtsoft.vn/swagger/index.html\">3. https://qltcapicore.dtsoft.vn</a>","children":[],"payload":{"lines":"7,8"}},{"content":"<a href=\"https://authqltc.dtsoft.vn\">4. https://authqltc.dtsoft.vn</a>","children":[],"payload":{"lines":"8,9"}},{"content":"<a href=\"https://apiqltc.dtsoft.vn/swagger/index.html\">5. https://apiqltc.dtsoft.vn</a>","children":[],"payload":{"lines":"9,10"}},{"content":"<a href=\"https://apiqltcqr.dtsoft.vn/swagger/index.html\">6. https://apiqltcqr.dtsoft.vn</a>","children":[],"payload":{"lines":"10,11"}},{"content":"<a href=\"https://apiqltcapp.dtsoft.vn/swagger/index.html\">7. https://apiqltcapp.dtsoft.vn</a>","children":[],"payload":{"lines":"11,12"}},{"content":"<a href=\"https://apiqltcapptest.dtsoft.vn/swagger/index.html\">8. https://apiqltcapptest.dtsoft.vn</a>","children":[],"payload":{"lines":"12,13"}},{"content":"<a href=\"https://apiqltcqrtest.dtsoft.vn/swagger/index.html\">9. https://apiqltcqrtest.dtsoft.vn</a>","children":[],"payload":{"lines":"13,14"}},{"content":"<a href=\"https://qltcreport.dtsoft.vn\">10. https://qltcreport.dtsoft.vn</a>","children":[],"payload":{"lines":"14,15"}},{"content":"<a href=\"https://qltcapireport.dtsoft.vn\">11. https://qltcapireport.dtsoft.vn</a>","children":[],"payload":{"lines":"15,16"}},{"content":"<a href=\"https://qltcapicorereport.dtsoft.vn/swagger/index.html\">12. https://qltcapicorereport.dtsoft.vn</a>","children":[],"payload":{"lines":"16,17"}}],"payload":{"lines":"4,5"}},{"content":"🖥️ SQL","children":[{"content":"QLTCs.bak","children":[],"payload":{"lines":"18,19"}},{"content":"QLTCsrp.bak","children":[],"payload":{"lines":"19,20"}},{"content":"QLTCs20232024.bak","children":[],"payload":{"lines":"20,21"}},{"content":"QLTCs_API.bak","children":[],"payload":{"lines":"21,22"}},{"content":"QLTCs_Auth.bak","children":[],"payload":{"lines":"22,23"}},{"content":"QLTCs_BM.bak","children":[],"payload":{"lines":"23,24"}},{"content":"QLTCs_LOG.bak","children":[],"payload":{"lines":"24,25"}},{"content":"QLTCs_User.bak","children":[],"payload":{"lines":"25,26"}}],"payload":{"lines":"17,18"}}]},{"color":["#2980b9"],"font":"Times New Roman"})</script>
+<div id="sidebar">
+<div id="outline">
+</div>
+</div>
+<div id="page-container">
+<div id="pf1" class="pf w0 h0" data-page-no="1"><div class="pc pc1 w0 h0"><img class="bi x0 y0 w1 h1" alt="" src="bg1.png"/><div class="c x0 y1 w2 h2"><div class="t m0 x1 h3 y2 ff1 fs0 fc0 sc0 ls0 ws0">Public</div><div class="t m0 x2 h4 y3 ff2 fs1 fc0 sc0 ls0 ws0">QLT<span class="_ _0"></span>C</div><div class="t m0 x3 h5 y4 ff1 fs2 fc0 sc0 ls0 ws0">IIS</div><div class="t m0 x4 h6 y5 ff3 fs0 fc1 sc0 ls0 ws0">1. https://qltc.dtsoft.vn</div><div class="t m0 x5 h7 y6 ff4 fs0 fc1 sc0 ls0 ws0"></div><div class="t m0 x4 h6 y7 ff3 fs0 fc1 sc0 ls0 ws0">2. https://qltc<span class="_ _1"></span>api.dtsoft.vn</div><div class="t m0 x6 h7 y8 ff4 fs0 fc1 sc0 ls0 ws0"></div><div class="t m0 x4 h6 y9 ff3 fs0 fc1 sc0 ls0 ws0">3. https://qltc<span class="_ _1"></span>apicore.dtso<span class="_ _1"></span>ft.vn</div><div class="t m0 x7 h7 ya ff4 fs0 fc1 sc0 ls0 ws0"></div><div class="t m0 x4 h6 yb ff3 fs0 fc1 sc0 ls0 ws0">4. https://authqltc.dtsoft.vn</div><div class="t m0 x8 h7 yc ff4 fs0 fc1 sc0 ls0 ws0"></div><div class="t m0 x4 h6 yd ff3 fs0 fc1 sc0 ls0 ws0">5. https://apiqltc.dtsoft.vn</div><div class="t m0 x6 h7 ye ff4 fs0 fc1 sc0 ls0 ws0"></div><div class="t m0 x4 h6 yf ff3 fs0 fc1 sc0 ls0 ws0">6. https://apiqltc<span class="_ _1"></span>qr.dtsoft.vn</div><div class="t m0 x9 h7 y10 ff4 fs0 fc1 sc0 ls0 ws0"></div><div class="t m0 x4 h6 y11 ff3 fs0 fc1 sc0 ls0 ws0">7<span class="_ _1"></span>. https://apiqltc<span class="_ _1"></span>app.dtsoft.vn</div><div class="t m0 xa h7 y12 ff4 fs0 fc1 sc0 ls0 ws0"></div><div class="t m0 x4 h6 y13 ff3 fs0 fc1 sc0 ls0 ws0">8. https://apiqltc<span class="_ _1"></span>apptest.dtsoft.vn</div><div class="t m0 xb h7 y14 ff4 fs0 fc1 sc0 ls0 ws0"></div><div class="t m0 x4 h6 y15 ff3 fs0 fc1 sc0 ls0 ws0">9. https://apiqltc<span class="_ _1"></span>qrtest.dtsoft.vn</div><div class="t m0 xc h7 y16 ff4 fs0 fc1 sc0 ls0 ws0"></div><div class="t m0 x4 h6 y17 ff3 fs0 fc1 sc0 ls0 ws0">10. https://qltcreport.dtsoft.vn</div><div class="t m0 x7 h7 y18 ff4 fs0 fc1 sc0 ls0 ws0"></div><div class="t m0 x4 h6 y19 ff3 fs0 fc1 sc0 ls0 ws0">11. https://qltc<span class="_ _1"></span>apireport.dtsoft.vn</div><div class="t m0 xd h7 y1a ff4 fs0 fc1 sc0 ls0 ws0"></div><div class="t m0 x4 h6 y1b ff3 fs0 fc1 sc0 ls0 ws0">12. https://qltc<span class="_ _1"></span>apicorereport.dtso<span class="_ _1"></span>ft.vn</div><div class="t m0 xe h7 y1c ff4 fs0 fc1 sc0 ls0 ws0"></div><div class="t m0 xf h5 y1d ff1 fs2 fc0 sc0 ls0 ws0">SQL</div><div class="t m0 x10 h6 y1e ff3 fs0 fc2 sc0 ls0 ws0">QLT<span class="_ _1"></span>Cs.bak</div><div class="t m0 x10 h6 y1f ff3 fs0 fc2 sc0 ls0 ws0">QLT<span class="_ _1"></span>Csrp.bak</div><div class="t m0 x10 h6 y20 ff3 fs0 fc2 sc0 ls0 ws0">QLT<span class="_ _1"></span>Cs20232024.bak</div><div class="t m0 x10 h6 y21 ff3 fs0 fc2 sc0 ls0 ws0">QLT<span class="_ _1"></span>Cs_API.bak</div><div class="t m0 x10 h6 y22 ff3 fs0 fc2 sc0 ls0 ws0">QLT<span class="_ _1"></span>Cs_A<span class="_ _1"></span>uth.bak</div><div class="t m0 x10 h6 y23 ff3 fs0 fc2 sc0 ls0 ws0">QLT<span class="_ _1"></span>Cs_BM.bak</div><div class="t m0 x10 h6 y24 ff3 fs0 fc2 sc0 ls0 ws0">QLT<span class="_ _1"></span>Cs_LO<span class="_ _1"></span>G.bak</div><div class="t m0 x10 h6 y25 ff3 fs0 fc2 sc0 ls0 ws0">QLT<span class="_ _1"></span>Cs_User.bak</div><div class="t m0 x11 h5 y26 ff1 fs2 fc3 sc0 ls0 ws0">SF/W<span class="_ _0"></span>AF</div><div class="t m0 x12 h6 y27 ff3 fs0 fc4 sc0 ls0 ws0"> Software Fire<span class="_ _1"></span>wall</div><div class="t m0 x12 h6 y28 ff3 fs0 fc4 sc0 ls0 ws0">W<span class="_ _1"></span>AF (W<span class="_ _0"></span>eb Application Fire<span class="_ _1"></span>wall)</div><div class="t m0 x13 h8 y29 ff1 fs3 fc3 sc0 ls0 ws0">Kết nối dữ liệu </div></div><a class="l" href="https://qltc.dtsoft.vn/"><div class="d m1" style="border-style:none;position:absolute;left:641.947630px;bottom:761.086430px;width:10.497130px;height:10.497070px;background-color:rgba(255,255,255,0.000001);"></div></a><a class="l" href="https://qltcapi.dtsoft.vn/"><div class="d m1" style="border-style:none;position:absolute;left:659.942690px;bottom:731.844480px;width:10.497070px;height:10.497070px;background-color:rgba(255,255,255,0.000001);"></div></a><a class="l" href="https://qltcapicore.dtsoft.vn/swagger/index.html"><div class="d m1" style="border-style:none;position:absolute;left:682.436460px;bottom:702.602540px;width:10.497070px;height:10.497070px;background-color:rgba(255,255,255,0.000001);"></div></a><a class="l" href="https://authqltc.dtsoft.vn/"><div class="d m1" style="border-style:none;position:absolute;left:668.190370px;bottom:673.360600px;width:10.497130px;height:10.497130px;background-color:rgba(255,255,255,0.000001);"></div></a><a class="l" href="https://apiqltc.dtsoft.vn/swagger/index.html"><div class="d m1" style="border-style:none;position:absolute;left:660.692500px;bottom:644.118710px;width:10.497140px;height:10.497130px;background-color:rgba(255,255,255,0.000001);"></div></a><a class="l" href="https://apiqltcqr.dtsoft.vn/swagger/index.html"><div class="d m1" style="border-style:none;position:absolute;left:671.939390px;bottom:614.876770px;width:10.497070px;height:10.497130px;background-color:rgba(255,255,255,0.000001);"></div></a><a class="l" href="https://apiqltcapp.dtsoft.vn/swagger/index.html"><div class="d m1" style="border-style:none;position:absolute;left:680.187130px;bottom:585.634890px;width:10.497140px;height:10.497070px;background-color:rgba(255,255,255,0.000001);"></div></a><a class="l" href="https://apiqltcapptest.dtsoft.vn/swagger/index.html"><div class="d m1" style="border-style:none;position:absolute;left:700.431520px;bottom:556.392940px;width:10.497070px;height:10.497070px;background-color:rgba(255,255,255,0.000001);"></div></a><a class="l" href="https://apiqltcqrtest.dtsoft.vn/swagger/index.html"><div class="d m1" style="border-style:none;position:absolute;left:690.684200px;bottom:527.151000px;width:10.497140px;height:10.497130px;background-color:rgba(255,255,255,0.000001);"></div></a><a class="l" href="https://qltcreport.dtsoft.vn/"><div class="d m1" style="border-style:none;position:absolute;left:681.686710px;bottom:497.909090px;width:10.497070px;height:10.497100px;background-color:rgba(255,255,255,0.000001);"></div></a><a class="l" href="https://qltcapireport.dtsoft.vn/"><div class="d m1" style="border-style:none;position:absolute;left:693.683350px;bottom:468.667180px;width:10.497130px;height:10.497100px;background-color:rgba(255,255,255,0.000001);"></div></a><a class="l" href="https://qltcapicorereport.dtsoft.vn/swagger/index.html"><div class="d m1" style="border-style:none;position:absolute;left:718.426510px;bottom:439.425260px;width:10.497070px;height:10.497100px;background-color:rgba(255,255,255,0.000001);"></div></a></div><div class="pi" data-data='{"ctm":[1.000000,0.000000,0.000000,1.000000,0.000000,0.000000]}'></div></div>
+</div>
+<div class="loading-indicator">
+
+</div>
 </body>
 </html>
